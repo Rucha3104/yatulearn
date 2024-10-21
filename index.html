@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind-Css</title>
+    <link rel="stylesheet" href="output.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+</head>
+<body>
+    <!--nav-bar-->
+
+<nav class="p-3 flex justify-between bg-white items-center">
+        <a href="#" id="brand" class="flex gap-2 items-center" >
+        <img class=" object-cover flex max-h-12 max-w-12" src="assets/asset 0.png" alt="icon">
+        <span class="text-lg font-medium font-display">ToDesktop</span>
+    </a>
+    <div id="nav-menu" class="hidden md:flex gap-12">
+        <a href="#" class="font-medium hover:text-pink-700">Pricing</a>
+        <a href="#" class="font-medium hover:text-blue-400">Docs</a>
+        <a href="#" class="font-medium hover:text-blue-400">Changelog</a>
+        <a href="#" class="font-medium hover:text-blue-400">Blog</a>
+        <a href="#" class="font-medium hover:text-blue-400">Login</a>
+    </div>
+    <button class="md:hidden p-2">
+        <i class="fa-solid fa-arrow-right"></i>
+        <img src="assets/electron-icon.E8mrXtZM.svg" alt="pic">
+    </button>
+
+    <button class="p-2 md:hidden" onclick="handlemenu()">
+        <i class="fa-solid fa-bars  bg-gray-600 hover:border-l-gray-700"></i>
+    </button>
+       
+</nav>
+    
+</body>
+<script src="script.js"></script>
+</html>

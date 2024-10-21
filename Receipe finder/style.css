@@ -1,0 +1,99 @@
+header {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#logo {
+    width: 100px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 10px 0;
+}
+
+header p {
+    color: #555;
+    font-size: 1.2em;
+}
+.instructions {
+    text-align: center;
+    margin-top: 10px;
+    color: #777;
+}
+.recipe {
+    width: 30%;
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.recipe:hover {
+    transform: scale(1.05);
+}
+
+.recipe img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.recipe h3 {
+    margin-top: 10px;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.recipe p {
+    margin: 5px 0;
+    font-size: 1em;
+    color: #555;
+}
+
+.recipe ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    margin-top: 10px;
+}
+
+.recipe-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #28a745;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.recipe-link:hover {
+    background-color: #218838;
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f9fa;
+    color: #555;
+    margin-top: 50px;
+    font-size: 0.9em;
+}
+
+footer a {
+    color: #28a745;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+.no-results {
+    text-align: center;
+    font-size: 1.2em;
+    color: #777;
+    margin-top: 20px;
+}

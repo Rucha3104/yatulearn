@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Recipe Finder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Recipe Finder</h1>
+        <div id="auth-section">
+            <button onclick="logIn()">Login</button>
+            <button onclick="signUp()">Sign Up</button>
+        </div>
+    </header>
+
+    <!-- Search and Filters -->
+    <div class="search-bar">
+        <input type="text" id="search-input" placeholder="Search for recipes...">
+        <button id="search-button">Search</button>
+        <div class="filters">
+            <label><input type="checkbox" id="vegan"> Vegan</label>
+            <label><input type="checkbox" id="vegetarian"> Vegetarian</label>
+            <label><input type="checkbox" id="gluten-free"> Gluten Free</label>
+            <label><input type="checkbox" id="paleo"> Paleo</label>
+            <label><input type="checkbox" id="keto"> Keto</label>
+            <label for="sort-by">Sort by:</label>
+            <select id="sort-by">
+                <option value="calories">Calories</option>
+                <option value="time">Preparation Time</option>
+                <option value="popularity">Popularity</option>
+            </select>
+        </div>
+    </div>
+
+    <!-- Autocomplete Suggestions -->
+    <ul id="suggestion-box"></ul>
+
+    <!-- Recipe List -->
+    <div id="recipe-container"></div>
+
+    <!-- Load More Button -->
+    <button id="load-more-button" class="hidden">Load More</button>
+
+    <!-- Shopping List -->
+    <div id="shopping-list-section">
+        <h3>Your Shopping List</h3>
+        <ul id="shopping-list"></ul>
+    </div>
+
+    <!-- Meal Planner -->
+    <div id="meal-planner">
+        <h3>Meal Planner</h3>
+        <ul>
+            <li>Monday: <span id="meal-monday"></span></li>
+            <li>Tuesday: <span id="meal-tuesday"></span></li>
+            <li>Wednesday: <span id="meal-wednesday"></span></li>
+            <li>Thursday: <span id="meal-thursday"></span></li>
+            <li>Friday: <span id="meal-friday"></span></li>
+            <li>Saturday: <span id="meal-saturday"></span></li>
+            <li>Sunday: <span id="meal-sunday"></span></li>
+        </ul>
+    </div>
+
+    <!-- Loading Spinner -->
+    <div id="loading-spinner" class="hidden">
+        <img src="assets/spinner.gif" alt="Loading...">
+    </div>
+
+    <!-- JavaScript -->
+    <script src="firebase.js"></script> <!-- Optional Firebase setup -->
+    <script src="app.js"></script>
+</body>
+</html>

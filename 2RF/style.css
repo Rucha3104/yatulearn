@@ -1,0 +1,86 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 20px;
+    color: white;
+}
+
+h1 {
+    margin: 0;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.filters {
+    margin-left: 20px;
+}
+
+input[type="text"], select, button {
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Recipe Container */
+#recipe-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.recipe {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 10px;
+    width: 300px;
+}
+
+.recipe img {
+    max-width: 100%;
+    height: auto;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Shopping List and Meal Planner */
+#shopping-list-section, #meal-planner {
+    margin-top: 30px;
+}
+
+#shopping-list li, #meal-planner li {
+    list-style-type: none;
+    padding: 5px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .recipe {
+        width: 100%;
+    }
+}
